@@ -1,0 +1,171 @@
+.footer-container {
+display: flex;
+flex-direction: column;
+width: 89%;
+margin: 0 auto; 
+}
+.red-part-footer {
+display: flex;
+background-color: #FAF3EA;
+padding: 70px;
+padding-left: 70px;
+padding-right: 175px;
+width: 120%; 
+justify-content: space-between;
+position: relative;
+left: -75px;
+}
+.grid-footer {
+    display: grid;
+    grid-template-columns: 25% 20% 25% 30%;
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+    width: 100%;
+    margin-left: -100px;
+    }
+    
+
+.footer-group {
+display: flex;
+gap: 5px;
+}
+.footer-group span {
+    font-weight: bold;
+}
+
+.footer-img {
+height: 45px;
+margin-top: 0;
+}
+
+.title {
+font-size: 24px;
+font-weight: bold;
+grid-row: 1;
+grid-column: 1;
+}
+
+.links {
+font-size: 16px;
+grid-column: 2;
+line-height: 35px;
+}
+
+.links-decorations {
+text-decoration: none;
+color: black;
+}
+
+.other-links,
+.Newsletter {
+font-size: 16px;
+grid-column: auto;
+line-height: 35px;
+} 
+
+
+.footer-line2 {
+border-bottom: 2px solid #D9D9D9;
+width: 115%;
+margin: -100px;
+margin-top: 20px;
+margin-bottom: 40px;
+}
+
+.grey-color {
+color: #9F9F9F;
+}
+
+.dark-grey-words {
+color: #898989;
+margin-top: 8px;
+}
+
+.uppercase {
+text-transform: uppercase;
+}
+
+.address {
+margin-bottom: -11px;
+}
+
+.Subscribe {
+display: flex;
+gap: 10px;
+text-decoration: underline;
+}
+
+.mail {
+border: none;
+padding: 10px;
+font-size: 16px;
+}
+
+.copyright {
+font-size: 14px;
+grid-column: 1;
+grid-row: 2;
+text-align: start;
+margin-top: 20px;
+margin-left: -80px;
+}
+
+@media (max-width: 1024px) {
+    .red-part-footer {
+        width: 130%; 
+        padding: 50px 30px; 
+        flex-direction: column; 
+        align-items: center; 
+        gap: 10px;
+
+      }
+      .footer-group { 
+        width: 100%; 
+        max-width: 240px; 
+        margin: 0 10px; 
+      }
+
+.grid-footer {
+    grid-template-columns: 15% 10% 55% 30%;
+}
+.footer-line2 {
+    width: 120%;
+    margin: -80px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+}
+
+@media (max-width: 768px) {
+.red-part-footer {
+    width: 150%;
+    padding: 50px;
+    gap: 10px;
+}
+.title {
+    font-size: 20px;
+    text-align: start;
+}
+.links, .other-links, .Newsletter {
+    text-align: center;
+}
+.grid-footer {
+    grid-template-columns: 35% 15% 30% 80%;
+}
+.Subscribe {
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+}
+
+.mail {
+    width: 100%;
+}
+.footer-line2 {
+width: 130%;
+margin: -80px;
+margin-top: 10px;
+margin-bottom: 20px;
+}
+}
